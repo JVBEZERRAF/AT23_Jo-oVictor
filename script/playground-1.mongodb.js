@@ -1,6 +1,4 @@
 // 04_nosql_poc.js
-// Execute como MongoDB Playground no VS Code, conectado ao seu cluster Atlas.
-// Nao coloque senha real neste arquivo nem publique credenciais no GitHub.
 
 use('omnichannel_nosql');
 
