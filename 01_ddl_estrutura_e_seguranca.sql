@@ -1,6 +1,5 @@
 -- 01_ddl_estrutura_e_seguranca.sql
 -- Projeto: Sistema de Gestao OmniChannel
--- Execute no MySQL Workbench com uma conta que tenha permissao para criar banco/usuarios.
 
 CREATE DATABASE IF NOT EXISTS omnichannel_db
   CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -93,8 +92,6 @@ CREATE TABLE IF NOT EXISTS auditoria_preco (
 CREATE INDEX idx_pedidos_data ON pedidos(data_pedido);
 CREATE INDEX idx_itens_produto ON itens_pedido(id_produto);
 
--- Conta de exemplo com permissao somente de leitura nos produtos.
--- Altere a senha antes de usar em ambiente real.
 CREATE USER IF NOT EXISTS 'atendente_omni'@'localhost' IDENTIFIED BY 'Troque_Esta_Senha123!';
 GRANT SELECT ON omnichannel_db.produtos TO 'atendente_omni'@'localhost';
 FLUSH PRIVILEGES;
