@@ -46,8 +46,6 @@ INSERT INTO pagamentos (id_pedido,metodo,valor,status) VALUES
 (4,'Pix',799.00,'Aprovado'),
 (5,'Boleto',89.90,'Aprovado');
 
--- Dados de exemplo para demonstrar a tabela de auditoria.
--- A trigger tambem registrara automaticamente futuras alteracoes de preco.
 INSERT INTO auditoria_preco (id_produto,preco_antigo,preco_novo,usuario) VALUES
 (1,2599.90,2499.90,'carga_inicial'),
 (2,3999.00,3899.00,'carga_inicial'),
