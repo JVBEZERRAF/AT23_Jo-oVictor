@@ -1,4 +1,4 @@
-# AT23_Jo-oVictor
+# AT23_JoaoVictor
 # Sistema de Gestão OmniChannel
 
 ## Descrição do Projeto
