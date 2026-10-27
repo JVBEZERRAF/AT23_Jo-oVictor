@@ -85,11 +85,4 @@ BEGIN
 END //
 DELIMITER ;
 
--- TESTE DA TRIGGER: deve inserir uma nova linha na auditoria_preco.
--- UPDATE produtos SET preco = preco + 1.00 WHERE id_produto = 1;
--- SELECT * FROM auditoria_preco ORDER BY id_auditoria DESC;
 
--- TESTE DA PROCEDURE (cliente 1, loja 1, produto 3, quantidade 2):
--- CALL sp_processar_venda(1, 1, 3, 2, 'Online', 'Pix');
--- SELECT * FROM pedidos ORDER BY id_pedido DESC;
--- SELECT * FROM estoque WHERE id_loja=1 AND id_produto=3;
